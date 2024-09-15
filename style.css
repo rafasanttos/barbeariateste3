@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter",sans-serif;
+}
+body{
+    background-color: rgb(15, 15, 15);
+    overflow-x: hidden;
+    
+}
+h2{
+    color: yellow;
+}
+.itens-lista{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    width: 700px;
+    margin: 0 auto;
+    
+    color: white;
+    list-style: none;
+}
+.topo{
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+    background-color: rgb(0, 119, 255);
+    justify-content: center;
+    align-items: center;
+}
+.topo button{
+    background-color: yellow;
+    padding: 5px;
+    border-radius: 10px;
+    border-style: none;
+    width: 150px;
+}
+.fundo{
+    width: 100vw;
+    height: 500px;
+    background-color: beige;
+    background-image: url(funod.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: fill;
+    background-position: top;
+}
+.fundo img{
+    width: 100%;
+    display: none;
+}
+.texto{
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 80px;
+}
+.texto h1{
+    color: rgb(0, 81, 255);
+    
+}
+.container-galeria{
+    display: flex;
+    height: 100vh;
+    gap: 30px;
+    max-width: 80vw;
+    
+    
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+.galeria{
+    
+    width: 50vw;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 2;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0 auto;
+    background-color: rgb(32, 33, 34);
+    border-radius: 10px;
+}
+.galeria img{
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+    border: solid 1px yellow;
+}
+.titulo-servicos h2{
+    color: rgb(0, 119, 255);
+    text-align: center;
+}
+.servicos{
+    
+    display: flex;
+    gap: 20px;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.servicos img{
+    width: 50px;
+
+    
+}
+.servico{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+    justify-content: center;
+}
+.imagens-servicos{
+    width: 950px;
+    height: 70vh;
+    display: flex;
+    gap: 30px;
+    margin: 0 auto;
+    margin-top: 150px;
+    overflow-x: auto;
+   
+}
+.imagens-servicos img{
+    width: 300px;
+    height: 350px;
+    border-radius: 10px;
+    border: solid 2px yellow;
+}
+.redes{
+    width: 300px;
+    color: yellow;
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.redes i{
+    font-size: 40px;
+    text-align: center;
+}
+.mapa{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.mapa iframe{
+    border-radius: 10px;
+}
+footer{
+    width: 100vw;
+    height: 400px;
+    background-color: rgb(0, 119, 255);
+}
+.nssre{
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+.nssre2{
+    width: 300px;
+    
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 40px;
+}
+.nssre i{
+    
+    text-align: center;
+    color: yellow;
+    font-size: 25px;
+    
+}
+.citacao{
+    width: 600px;
+    margin: 0 auto;
+    color: yellow;
+    font-size: 25px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+.menu-mobile{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: solid 1px red; */
+}
+#botao-menu div{
+    width: 35px;
+    
+    height: 5px;
+    border-top: solid 3px rgb(255, 255, 255);
+   
+    
+}
+
+#traco1.virar{
+    transform: rotate(-45deg) translate(0px,6px);
+    transition: .3s ease-in;
+    /* animation: giro .1s forwards ease-in-out; */
+}
+#traco3.virar{
+    transform: rotate(45deg) translate(0px,-4px);
+    transition: .3s ease-in;
+    
+    /* animation: giro2 .1s forwards ease-in-out; */
+}
+#traco2.remove{
+    display: none;
+}
+.menu-mobile{
+    display: none;
+}
+.lista-mob{
+    position: absolute;
+    top: 10vh;
+    left: -100%;
+    width: 60vw;
+    height: 100vh;
+   
+    color: white;
+    background-color: rgb(53, 50, 50);
+    transition: .5s ease-in-out;
+    /* display:none; */
+    
+    
+}
+.lista-mob ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 100px;
+}
+.lista-mob.ativa{
+    display: block;
+    left: 0;
+   
+    
+    
+}
+.lista-mob button{
+    background-color: yellow;
+    padding: 10px;
+    border-style: none;
+    border-radius: 10px;
+    color: rgb(0, 119, 255);
+    font-weight: bold;
+}
+
+footer{
+    color: white;
+}
+@media screen and (max-width:480px) {
+    .container-galeria{
+        width: 100vw;
+        height: auto;
+        margin-top: 30px;
+    }
+    .galeria{
+        width: 100vw;
+        height: auto;
+       
+    }
+    /* .lista-mob{
+        display: flex;
+    } */
+    .imagens-servicos{
+        width: 350px;
+        margin-left: 20px;
+        overflow-x: auto;
+    }
+    .servicos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .mapa{
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .citacao{
+        width: 350px;
+    }
+    .itens-lista{
+        display: none;
+    }
+    .menu-mobile{
+        display: flex;
+    }
+}
